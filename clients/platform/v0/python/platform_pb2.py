@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='platform.proto',
-  package='org.dash.platform.dapi.v0',
+  package='org.xazab.platform.dapi.v0',
   syntax='proto3',
-  serialized_pb=_b('\n\x0eplatform.proto\x12\x19org.dash.platform.dapi.v0\":\n\x05Proof\x12\x17\n\x0froot_tree_proof\x18\x01 \x01(\x0c\x12\x18\n\x10store_tree_proof\x18\x02 \x01(\x0c\"L\n\x1dStateTransitionBroadcastError\x12\x0c\n\x04\x63ode\x18\x01 \x01(\r\x12\x0f\n\x07message\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x03 \x01(\x0c\";\n\x1f\x42roadcastStateTransitionRequest\x12\x18\n\x10state_transition\x18\x01 \x01(\x0c\"\"\n BroadcastStateTransitionResponse\"/\n\x12GetIdentityRequest\x12\n\n\x02id\x18\x01 \x01(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"X\n\x13GetIdentityResponse\x12\x10\n\x08identity\x18\x01 \x01(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.dash.platform.dapi.v0.Proof\"3\n\x16GetDataContractRequest\x12\n\n\x02id\x18\x01 \x01(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"a\n\x17GetDataContractResponse\x12\x15\n\rdata_contract\x18\x01 \x01(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.dash.platform.dapi.v0.Proof\"\xb9\x01\n\x13GetDocumentsRequest\x12\x18\n\x10\x64\x61ta_contract_id\x18\x01 \x01(\x0c\x12\x15\n\rdocument_type\x18\x02 \x01(\t\x12\r\n\x05where\x18\x03 \x01(\x0c\x12\x10\n\x08order_by\x18\x04 \x01(\x0c\x12\r\n\x05limit\x18\x05 \x01(\r\x12\x15\n\x0bstart_after\x18\x06 \x01(\rH\x00\x12\x12\n\x08start_at\x18\x07 \x01(\rH\x00\x12\r\n\x05prove\x18\x08 \x01(\x08\x42\x07\n\x05start\"Z\n\x14GetDocumentsResponse\x12\x11\n\tdocuments\x18\x01 \x03(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.dash.platform.dapi.v0.Proof\"Q\n%GetIdentitiesByPublicKeyHashesRequest\x12\x19\n\x11public_key_hashes\x18\x01 \x03(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"m\n&GetIdentitiesByPublicKeyHashesResponse\x12\x12\n\nidentities\x18\x01 \x03(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.dash.platform.dapi.v0.Proof\"R\n&GetIdentityIdsByPublicKeyHashesRequest\x12\x19\n\x11public_key_hashes\x18\x01 \x03(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"p\n\'GetIdentityIdsByPublicKeyHashesResponse\x12\x14\n\x0cidentity_ids\x18\x01 \x03(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.dash.platform.dapi.v0.Proof\"S\n#WaitForStateTransitionResultRequest\x12\x1d\n\x15state_transition_hash\x18\x01 \x01(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"\xb1\x01\n$WaitForStateTransitionResultResponse\x12I\n\x05\x65rror\x18\x01 \x01(\x0b\x32\x38.org.dash.platform.dapi.v0.StateTransitionBroadcastErrorH\x00\x12\x31\n\x05proof\x18\x02 \x01(\x0b\x32 .org.dash.platform.dapi.v0.ProofH\x00\x42\x0b\n\tresponses2\xee\x07\n\x08Platform\x12\x93\x01\n\x18\x62roadcastStateTransition\x12:.org.dash.platform.dapi.v0.BroadcastStateTransitionRequest\x1a;.org.dash.platform.dapi.v0.BroadcastStateTransitionResponse\x12l\n\x0bgetIdentity\x12-.org.dash.platform.dapi.v0.GetIdentityRequest\x1a..org.dash.platform.dapi.v0.GetIdentityResponse\x12x\n\x0fgetDataContract\x12\x31.org.dash.platform.dapi.v0.GetDataContractRequest\x1a\x32.org.dash.platform.dapi.v0.GetDataContractResponse\x12o\n\x0cgetDocuments\x12..org.dash.platform.dapi.v0.GetDocumentsRequest\x1a/.org.dash.platform.dapi.v0.GetDocumentsResponse\x12\xa5\x01\n\x1egetIdentitiesByPublicKeyHashes\x12@.org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest\x1a\x41.org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse\x12\xa8\x01\n\x1fgetIdentityIdsByPublicKeyHashes\x12\x41.org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest\x1a\x42.org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse\x12\x9f\x01\n\x1cwaitForStateTransitionResult\x12>.org.dash.platform.dapi.v0.WaitForStateTransitionResultRequest\x1a?.org.dash.platform.dapi.v0.WaitForStateTransitionResultResponseb\x06proto3')
+  serialized_pb=_b('\n\x0eplatform.proto\x12\x19org.xazab.platform.dapi.v0\":\n\x05Proof\x12\x17\n\x0froot_tree_proof\x18\x01 \x01(\x0c\x12\x18\n\x10store_tree_proof\x18\x02 \x01(\x0c\"L\n\x1dStateTransitionBroadcastError\x12\x0c\n\x04\x63ode\x18\x01 \x01(\r\x12\x0f\n\x07message\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x03 \x01(\x0c\";\n\x1f\x42roadcastStateTransitionRequest\x12\x18\n\x10state_transition\x18\x01 \x01(\x0c\"\"\n BroadcastStateTransitionResponse\"/\n\x12GetIdentityRequest\x12\n\n\x02id\x18\x01 \x01(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"X\n\x13GetIdentityResponse\x12\x10\n\x08identity\x18\x01 \x01(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.xazab.platform.dapi.v0.Proof\"3\n\x16GetDataContractRequest\x12\n\n\x02id\x18\x01 \x01(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"a\n\x17GetDataContractResponse\x12\x15\n\rdata_contract\x18\x01 \x01(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.xazab.platform.dapi.v0.Proof\"\xb9\x01\n\x13GetDocumentsRequest\x12\x18\n\x10\x64\x61ta_contract_id\x18\x01 \x01(\x0c\x12\x15\n\rdocument_type\x18\x02 \x01(\t\x12\r\n\x05where\x18\x03 \x01(\x0c\x12\x10\n\x08order_by\x18\x04 \x01(\x0c\x12\r\n\x05limit\x18\x05 \x01(\r\x12\x15\n\x0bstart_after\x18\x06 \x01(\rH\x00\x12\x12\n\x08start_at\x18\x07 \x01(\rH\x00\x12\r\n\x05prove\x18\x08 \x01(\x08\x42\x07\n\x05start\"Z\n\x14GetDocumentsResponse\x12\x11\n\tdocuments\x18\x01 \x03(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.xazab.platform.dapi.v0.Proof\"Q\n%GetIdentitiesByPublicKeyHashesRequest\x12\x19\n\x11public_key_hashes\x18\x01 \x03(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"m\n&GetIdentitiesByPublicKeyHashesResponse\x12\x12\n\nidentities\x18\x01 \x03(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.xazab.platform.dapi.v0.Proof\"R\n&GetIdentityIdsByPublicKeyHashesRequest\x12\x19\n\x11public_key_hashes\x18\x01 \x03(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"p\n\'GetIdentityIdsByPublicKeyHashesResponse\x12\x14\n\x0cidentity_ids\x18\x01 \x03(\x0c\x12/\n\x05proof\x18\x02 \x01(\x0b\x32 .org.xazab.platform.dapi.v0.Proof\"S\n#WaitForStateTransitionResultRequest\x12\x1d\n\x15state_transition_hash\x18\x01 \x01(\x0c\x12\r\n\x05prove\x18\x02 \x01(\x08\"\xb1\x01\n$WaitForStateTransitionResultResponse\x12I\n\x05\x65rror\x18\x01 \x01(\x0b\x32\x38.org.xazab.platform.dapi.v0.StateTransitionBroadcastErrorH\x00\x12\x31\n\x05proof\x18\x02 \x01(\x0b\x32 .org.xazab.platform.dapi.v0.ProofH\x00\x42\x0b\n\tresponses2\xee\x07\n\x08Platform\x12\x93\x01\n\x18\x62roadcastStateTransition\x12:.org.xazab.platform.dapi.v0.BroadcastStateTransitionRequest\x1a;.org.xazab.platform.dapi.v0.BroadcastStateTransitionResponse\x12l\n\x0bgetIdentity\x12-.org.xazab.platform.dapi.v0.GetIdentityRequest\x1a..org.xazab.platform.dapi.v0.GetIdentityResponse\x12x\n\x0fgetDataContract\x12\x31.org.xazab.platform.dapi.v0.GetDataContractRequest\x1a\x32.org.xazab.platform.dapi.v0.GetDataContractResponse\x12o\n\x0cgetDocuments\x12..org.xazab.platform.dapi.v0.GetDocumentsRequest\x1a/.org.xazab.platform.dapi.v0.GetDocumentsResponse\x12\xa5\x01\n\x1egetIdentitiesByPublicKeyHashes\x12@.org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest\x1a\x41.org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse\x12\xa8\x01\n\x1fgetIdentityIdsByPublicKeyHashes\x12\x41.org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest\x1a\x42.org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse\x12\x9f\x01\n\x1cwaitForStateTransitionResult\x12>.org.xazab.platform.dapi.v0.WaitForStateTransitionResultRequest\x1a?.org.xazab.platform.dapi.v0.WaitForStateTransitionResultResponseb\x06proto3')
 )
 
 
@@ -27,20 +27,20 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _PROOF = _descriptor.Descriptor(
   name='Proof',
-  full_name='org.dash.platform.dapi.v0.Proof',
+  full_name='org.xazab.platform.dapi.v0.Proof',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='root_tree_proof', full_name='org.dash.platform.dapi.v0.Proof.root_tree_proof', index=0,
+      name='root_tree_proof', full_name='org.xazab.platform.dapi.v0.Proof.root_tree_proof', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='store_tree_proof', full_name='org.dash.platform.dapi.v0.Proof.store_tree_proof', index=1,
+      name='store_tree_proof', full_name='org.xazab.platform.dapi.v0.Proof.store_tree_proof', index=1,
       number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -65,27 +65,27 @@ _PROOF = _descriptor.Descriptor(
 
 _STATETRANSITIONBROADCASTERROR = _descriptor.Descriptor(
   name='StateTransitionBroadcastError',
-  full_name='org.dash.platform.dapi.v0.StateTransitionBroadcastError',
+  full_name='org.xazab.platform.dapi.v0.StateTransitionBroadcastError',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='code', full_name='org.dash.platform.dapi.v0.StateTransitionBroadcastError.code', index=0,
+      name='code', full_name='org.xazab.platform.dapi.v0.StateTransitionBroadcastError.code', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='message', full_name='org.dash.platform.dapi.v0.StateTransitionBroadcastError.message', index=1,
+      name='message', full_name='org.xazab.platform.dapi.v0.StateTransitionBroadcastError.message', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='data', full_name='org.dash.platform.dapi.v0.StateTransitionBroadcastError.data', index=2,
+      name='data', full_name='org.xazab.platform.dapi.v0.StateTransitionBroadcastError.data', index=2,
       number=3, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -110,13 +110,13 @@ _STATETRANSITIONBROADCASTERROR = _descriptor.Descriptor(
 
 _BROADCASTSTATETRANSITIONREQUEST = _descriptor.Descriptor(
   name='BroadcastStateTransitionRequest',
-  full_name='org.dash.platform.dapi.v0.BroadcastStateTransitionRequest',
+  full_name='org.xazab.platform.dapi.v0.BroadcastStateTransitionRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='state_transition', full_name='org.dash.platform.dapi.v0.BroadcastStateTransitionRequest.state_transition', index=0,
+      name='state_transition', full_name='org.xazab.platform.dapi.v0.BroadcastStateTransitionRequest.state_transition', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -141,7 +141,7 @@ _BROADCASTSTATETRANSITIONREQUEST = _descriptor.Descriptor(
 
 _BROADCASTSTATETRANSITIONRESPONSE = _descriptor.Descriptor(
   name='BroadcastStateTransitionResponse',
-  full_name='org.dash.platform.dapi.v0.BroadcastStateTransitionResponse',
+  full_name='org.xazab.platform.dapi.v0.BroadcastStateTransitionResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -165,20 +165,20 @@ _BROADCASTSTATETRANSITIONRESPONSE = _descriptor.Descriptor(
 
 _GETIDENTITYREQUEST = _descriptor.Descriptor(
   name='GetIdentityRequest',
-  full_name='org.dash.platform.dapi.v0.GetIdentityRequest',
+  full_name='org.xazab.platform.dapi.v0.GetIdentityRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='id', full_name='org.dash.platform.dapi.v0.GetIdentityRequest.id', index=0,
+      name='id', full_name='org.xazab.platform.dapi.v0.GetIdentityRequest.id', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='prove', full_name='org.dash.platform.dapi.v0.GetIdentityRequest.prove', index=1,
+      name='prove', full_name='org.xazab.platform.dapi.v0.GetIdentityRequest.prove', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -203,20 +203,20 @@ _GETIDENTITYREQUEST = _descriptor.Descriptor(
 
 _GETIDENTITYRESPONSE = _descriptor.Descriptor(
   name='GetIdentityResponse',
-  full_name='org.dash.platform.dapi.v0.GetIdentityResponse',
+  full_name='org.xazab.platform.dapi.v0.GetIdentityResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='identity', full_name='org.dash.platform.dapi.v0.GetIdentityResponse.identity', index=0,
+      name='identity', full_name='org.xazab.platform.dapi.v0.GetIdentityResponse.identity', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='proof', full_name='org.dash.platform.dapi.v0.GetIdentityResponse.proof', index=1,
+      name='proof', full_name='org.xazab.platform.dapi.v0.GetIdentityResponse.proof', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -241,20 +241,20 @@ _GETIDENTITYRESPONSE = _descriptor.Descriptor(
 
 _GETDATACONTRACTREQUEST = _descriptor.Descriptor(
   name='GetDataContractRequest',
-  full_name='org.dash.platform.dapi.v0.GetDataContractRequest',
+  full_name='org.xazab.platform.dapi.v0.GetDataContractRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='id', full_name='org.dash.platform.dapi.v0.GetDataContractRequest.id', index=0,
+      name='id', full_name='org.xazab.platform.dapi.v0.GetDataContractRequest.id', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='prove', full_name='org.dash.platform.dapi.v0.GetDataContractRequest.prove', index=1,
+      name='prove', full_name='org.xazab.platform.dapi.v0.GetDataContractRequest.prove', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -279,20 +279,20 @@ _GETDATACONTRACTREQUEST = _descriptor.Descriptor(
 
 _GETDATACONTRACTRESPONSE = _descriptor.Descriptor(
   name='GetDataContractResponse',
-  full_name='org.dash.platform.dapi.v0.GetDataContractResponse',
+  full_name='org.xazab.platform.dapi.v0.GetDataContractResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='data_contract', full_name='org.dash.platform.dapi.v0.GetDataContractResponse.data_contract', index=0,
+      name='data_contract', full_name='org.xazab.platform.dapi.v0.GetDataContractResponse.data_contract', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='proof', full_name='org.dash.platform.dapi.v0.GetDataContractResponse.proof', index=1,
+      name='proof', full_name='org.xazab.platform.dapi.v0.GetDataContractResponse.proof', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -317,62 +317,62 @@ _GETDATACONTRACTRESPONSE = _descriptor.Descriptor(
 
 _GETDOCUMENTSREQUEST = _descriptor.Descriptor(
   name='GetDocumentsRequest',
-  full_name='org.dash.platform.dapi.v0.GetDocumentsRequest',
+  full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='data_contract_id', full_name='org.dash.platform.dapi.v0.GetDocumentsRequest.data_contract_id', index=0,
+      name='data_contract_id', full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest.data_contract_id', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='document_type', full_name='org.dash.platform.dapi.v0.GetDocumentsRequest.document_type', index=1,
+      name='document_type', full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest.document_type', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='where', full_name='org.dash.platform.dapi.v0.GetDocumentsRequest.where', index=2,
+      name='where', full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest.where', index=2,
       number=3, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='order_by', full_name='org.dash.platform.dapi.v0.GetDocumentsRequest.order_by', index=3,
+      name='order_by', full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest.order_by', index=3,
       number=4, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='limit', full_name='org.dash.platform.dapi.v0.GetDocumentsRequest.limit', index=4,
+      name='limit', full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest.limit', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='start_after', full_name='org.dash.platform.dapi.v0.GetDocumentsRequest.start_after', index=5,
+      name='start_after', full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest.start_after', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='start_at', full_name='org.dash.platform.dapi.v0.GetDocumentsRequest.start_at', index=6,
+      name='start_at', full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest.start_at', index=6,
       number=7, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='prove', full_name='org.dash.platform.dapi.v0.GetDocumentsRequest.prove', index=7,
+      name='prove', full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest.prove', index=7,
       number=8, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -390,7 +390,7 @@ _GETDOCUMENTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='start', full_name='org.dash.platform.dapi.v0.GetDocumentsRequest.start',
+      name='start', full_name='org.xazab.platform.dapi.v0.GetDocumentsRequest.start',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=572,
@@ -400,20 +400,20 @@ _GETDOCUMENTSREQUEST = _descriptor.Descriptor(
 
 _GETDOCUMENTSRESPONSE = _descriptor.Descriptor(
   name='GetDocumentsResponse',
-  full_name='org.dash.platform.dapi.v0.GetDocumentsResponse',
+  full_name='org.xazab.platform.dapi.v0.GetDocumentsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='documents', full_name='org.dash.platform.dapi.v0.GetDocumentsResponse.documents', index=0,
+      name='documents', full_name='org.xazab.platform.dapi.v0.GetDocumentsResponse.documents', index=0,
       number=1, type=12, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='proof', full_name='org.dash.platform.dapi.v0.GetDocumentsResponse.proof', index=1,
+      name='proof', full_name='org.xazab.platform.dapi.v0.GetDocumentsResponse.proof', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -438,20 +438,20 @@ _GETDOCUMENTSRESPONSE = _descriptor.Descriptor(
 
 _GETIDENTITIESBYPUBLICKEYHASHESREQUEST = _descriptor.Descriptor(
   name='GetIdentitiesByPublicKeyHashesRequest',
-  full_name='org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest',
+  full_name='org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='public_key_hashes', full_name='org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest.public_key_hashes', index=0,
+      name='public_key_hashes', full_name='org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest.public_key_hashes', index=0,
       number=1, type=12, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='prove', full_name='org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest.prove', index=1,
+      name='prove', full_name='org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest.prove', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -476,20 +476,20 @@ _GETIDENTITIESBYPUBLICKEYHASHESREQUEST = _descriptor.Descriptor(
 
 _GETIDENTITIESBYPUBLICKEYHASHESRESPONSE = _descriptor.Descriptor(
   name='GetIdentitiesByPublicKeyHashesResponse',
-  full_name='org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse',
+  full_name='org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='identities', full_name='org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse.identities', index=0,
+      name='identities', full_name='org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse.identities', index=0,
       number=1, type=12, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='proof', full_name='org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse.proof', index=1,
+      name='proof', full_name='org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse.proof', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -514,20 +514,20 @@ _GETIDENTITIESBYPUBLICKEYHASHESRESPONSE = _descriptor.Descriptor(
 
 _GETIDENTITYIDSBYPUBLICKEYHASHESREQUEST = _descriptor.Descriptor(
   name='GetIdentityIdsByPublicKeyHashesRequest',
-  full_name='org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest',
+  full_name='org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='public_key_hashes', full_name='org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest.public_key_hashes', index=0,
+      name='public_key_hashes', full_name='org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest.public_key_hashes', index=0,
       number=1, type=12, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='prove', full_name='org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest.prove', index=1,
+      name='prove', full_name='org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest.prove', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -552,20 +552,20 @@ _GETIDENTITYIDSBYPUBLICKEYHASHESREQUEST = _descriptor.Descriptor(
 
 _GETIDENTITYIDSBYPUBLICKEYHASHESRESPONSE = _descriptor.Descriptor(
   name='GetIdentityIdsByPublicKeyHashesResponse',
-  full_name='org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse',
+  full_name='org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='identity_ids', full_name='org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse.identity_ids', index=0,
+      name='identity_ids', full_name='org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse.identity_ids', index=0,
       number=1, type=12, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='proof', full_name='org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse.proof', index=1,
+      name='proof', full_name='org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse.proof', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -590,20 +590,20 @@ _GETIDENTITYIDSBYPUBLICKEYHASHESRESPONSE = _descriptor.Descriptor(
 
 _WAITFORSTATETRANSITIONRESULTREQUEST = _descriptor.Descriptor(
   name='WaitForStateTransitionResultRequest',
-  full_name='org.dash.platform.dapi.v0.WaitForStateTransitionResultRequest',
+  full_name='org.xazab.platform.dapi.v0.WaitForStateTransitionResultRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='state_transition_hash', full_name='org.dash.platform.dapi.v0.WaitForStateTransitionResultRequest.state_transition_hash', index=0,
+      name='state_transition_hash', full_name='org.xazab.platform.dapi.v0.WaitForStateTransitionResultRequest.state_transition_hash', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='prove', full_name='org.dash.platform.dapi.v0.WaitForStateTransitionResultRequest.prove', index=1,
+      name='prove', full_name='org.xazab.platform.dapi.v0.WaitForStateTransitionResultRequest.prove', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -628,20 +628,20 @@ _WAITFORSTATETRANSITIONRESULTREQUEST = _descriptor.Descriptor(
 
 _WAITFORSTATETRANSITIONRESULTRESPONSE = _descriptor.Descriptor(
   name='WaitForStateTransitionResultResponse',
-  full_name='org.dash.platform.dapi.v0.WaitForStateTransitionResultResponse',
+  full_name='org.xazab.platform.dapi.v0.WaitForStateTransitionResultResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='error', full_name='org.dash.platform.dapi.v0.WaitForStateTransitionResultResponse.error', index=0,
+      name='error', full_name='org.xazab.platform.dapi.v0.WaitForStateTransitionResultResponse.error', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='proof', full_name='org.dash.platform.dapi.v0.WaitForStateTransitionResultResponse.proof', index=1,
+      name='proof', full_name='org.xazab.platform.dapi.v0.WaitForStateTransitionResultResponse.proof', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -659,7 +659,7 @@ _WAITFORSTATETRANSITIONRESULTRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='responses', full_name='org.dash.platform.dapi.v0.WaitForStateTransitionResultResponse.responses',
+      name='responses', full_name='org.xazab.platform.dapi.v0.WaitForStateTransitionResultResponse.responses',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=1329,
@@ -706,112 +706,112 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 Proof = _reflection.GeneratedProtocolMessageType('Proof', (_message.Message,), dict(
   DESCRIPTOR = _PROOF,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.Proof)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.Proof)
   ))
 _sym_db.RegisterMessage(Proof)
 
 StateTransitionBroadcastError = _reflection.GeneratedProtocolMessageType('StateTransitionBroadcastError', (_message.Message,), dict(
   DESCRIPTOR = _STATETRANSITIONBROADCASTERROR,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.StateTransitionBroadcastError)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.StateTransitionBroadcastError)
   ))
 _sym_db.RegisterMessage(StateTransitionBroadcastError)
 
 BroadcastStateTransitionRequest = _reflection.GeneratedProtocolMessageType('BroadcastStateTransitionRequest', (_message.Message,), dict(
   DESCRIPTOR = _BROADCASTSTATETRANSITIONREQUEST,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.BroadcastStateTransitionRequest)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.BroadcastStateTransitionRequest)
   ))
 _sym_db.RegisterMessage(BroadcastStateTransitionRequest)
 
 BroadcastStateTransitionResponse = _reflection.GeneratedProtocolMessageType('BroadcastStateTransitionResponse', (_message.Message,), dict(
   DESCRIPTOR = _BROADCASTSTATETRANSITIONRESPONSE,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.BroadcastStateTransitionResponse)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.BroadcastStateTransitionResponse)
   ))
 _sym_db.RegisterMessage(BroadcastStateTransitionResponse)
 
 GetIdentityRequest = _reflection.GeneratedProtocolMessageType('GetIdentityRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETIDENTITYREQUEST,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetIdentityRequest)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetIdentityRequest)
   ))
 _sym_db.RegisterMessage(GetIdentityRequest)
 
 GetIdentityResponse = _reflection.GeneratedProtocolMessageType('GetIdentityResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETIDENTITYRESPONSE,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetIdentityResponse)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetIdentityResponse)
   ))
 _sym_db.RegisterMessage(GetIdentityResponse)
 
 GetDataContractRequest = _reflection.GeneratedProtocolMessageType('GetDataContractRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETDATACONTRACTREQUEST,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetDataContractRequest)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetDataContractRequest)
   ))
 _sym_db.RegisterMessage(GetDataContractRequest)
 
 GetDataContractResponse = _reflection.GeneratedProtocolMessageType('GetDataContractResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETDATACONTRACTRESPONSE,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetDataContractResponse)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetDataContractResponse)
   ))
 _sym_db.RegisterMessage(GetDataContractResponse)
 
 GetDocumentsRequest = _reflection.GeneratedProtocolMessageType('GetDocumentsRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETDOCUMENTSREQUEST,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetDocumentsRequest)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetDocumentsRequest)
   ))
 _sym_db.RegisterMessage(GetDocumentsRequest)
 
 GetDocumentsResponse = _reflection.GeneratedProtocolMessageType('GetDocumentsResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETDOCUMENTSRESPONSE,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetDocumentsResponse)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetDocumentsResponse)
   ))
 _sym_db.RegisterMessage(GetDocumentsResponse)
 
 GetIdentitiesByPublicKeyHashesRequest = _reflection.GeneratedProtocolMessageType('GetIdentitiesByPublicKeyHashesRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETIDENTITIESBYPUBLICKEYHASHESREQUEST,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesRequest)
   ))
 _sym_db.RegisterMessage(GetIdentitiesByPublicKeyHashesRequest)
 
 GetIdentitiesByPublicKeyHashesResponse = _reflection.GeneratedProtocolMessageType('GetIdentitiesByPublicKeyHashesResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETIDENTITIESBYPUBLICKEYHASHESRESPONSE,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetIdentitiesByPublicKeyHashesResponse)
   ))
 _sym_db.RegisterMessage(GetIdentitiesByPublicKeyHashesResponse)
 
 GetIdentityIdsByPublicKeyHashesRequest = _reflection.GeneratedProtocolMessageType('GetIdentityIdsByPublicKeyHashesRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETIDENTITYIDSBYPUBLICKEYHASHESREQUEST,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesRequest)
   ))
 _sym_db.RegisterMessage(GetIdentityIdsByPublicKeyHashesRequest)
 
 GetIdentityIdsByPublicKeyHashesResponse = _reflection.GeneratedProtocolMessageType('GetIdentityIdsByPublicKeyHashesResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETIDENTITYIDSBYPUBLICKEYHASHESRESPONSE,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.GetIdentityIdsByPublicKeyHashesResponse)
   ))
 _sym_db.RegisterMessage(GetIdentityIdsByPublicKeyHashesResponse)
 
 WaitForStateTransitionResultRequest = _reflection.GeneratedProtocolMessageType('WaitForStateTransitionResultRequest', (_message.Message,), dict(
   DESCRIPTOR = _WAITFORSTATETRANSITIONRESULTREQUEST,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.WaitForStateTransitionResultRequest)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.WaitForStateTransitionResultRequest)
   ))
 _sym_db.RegisterMessage(WaitForStateTransitionResultRequest)
 
 WaitForStateTransitionResultResponse = _reflection.GeneratedProtocolMessageType('WaitForStateTransitionResultResponse', (_message.Message,), dict(
   DESCRIPTOR = _WAITFORSTATETRANSITIONRESULTRESPONSE,
   __module__ = 'platform_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.WaitForStateTransitionResultResponse)
+  # @@protoc_insertion_point(class_scope:org.xazab.platform.dapi.v0.WaitForStateTransitionResultResponse)
   ))
 _sym_db.RegisterMessage(WaitForStateTransitionResultResponse)
 
@@ -819,7 +819,7 @@ _sym_db.RegisterMessage(WaitForStateTransitionResultResponse)
 
 _PLATFORM = _descriptor.ServiceDescriptor(
   name='Platform',
-  full_name='org.dash.platform.dapi.v0.Platform',
+  full_name='org.xazab.platform.dapi.v0.Platform',
   file=DESCRIPTOR,
   index=0,
   options=None,
@@ -828,7 +828,7 @@ _PLATFORM = _descriptor.ServiceDescriptor(
   methods=[
   _descriptor.MethodDescriptor(
     name='broadcastStateTransition',
-    full_name='org.dash.platform.dapi.v0.Platform.broadcastStateTransition',
+    full_name='org.xazab.platform.dapi.v0.Platform.broadcastStateTransition',
     index=0,
     containing_service=None,
     input_type=_BROADCASTSTATETRANSITIONREQUEST,
@@ -837,7 +837,7 @@ _PLATFORM = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='getIdentity',
-    full_name='org.dash.platform.dapi.v0.Platform.getIdentity',
+    full_name='org.xazab.platform.dapi.v0.Platform.getIdentity',
     index=1,
     containing_service=None,
     input_type=_GETIDENTITYREQUEST,
@@ -846,7 +846,7 @@ _PLATFORM = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='getDataContract',
-    full_name='org.dash.platform.dapi.v0.Platform.getDataContract',
+    full_name='org.xazab.platform.dapi.v0.Platform.getDataContract',
     index=2,
     containing_service=None,
     input_type=_GETDATACONTRACTREQUEST,
@@ -855,7 +855,7 @@ _PLATFORM = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='getDocuments',
-    full_name='org.dash.platform.dapi.v0.Platform.getDocuments',
+    full_name='org.xazab.platform.dapi.v0.Platform.getDocuments',
     index=3,
     containing_service=None,
     input_type=_GETDOCUMENTSREQUEST,
@@ -864,7 +864,7 @@ _PLATFORM = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='getIdentitiesByPublicKeyHashes',
-    full_name='org.dash.platform.dapi.v0.Platform.getIdentitiesByPublicKeyHashes',
+    full_name='org.xazab.platform.dapi.v0.Platform.getIdentitiesByPublicKeyHashes',
     index=4,
     containing_service=None,
     input_type=_GETIDENTITIESBYPUBLICKEYHASHESREQUEST,
@@ -873,7 +873,7 @@ _PLATFORM = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='getIdentityIdsByPublicKeyHashes',
-    full_name='org.dash.platform.dapi.v0.Platform.getIdentityIdsByPublicKeyHashes',
+    full_name='org.xazab.platform.dapi.v0.Platform.getIdentityIdsByPublicKeyHashes',
     index=5,
     containing_service=None,
     input_type=_GETIDENTITYIDSBYPUBLICKEYHASHESREQUEST,
@@ -882,7 +882,7 @@ _PLATFORM = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='waitForStateTransitionResult',
-    full_name='org.dash.platform.dapi.v0.Platform.waitForStateTransitionResult',
+    full_name='org.xazab.platform.dapi.v0.Platform.waitForStateTransitionResult',
     index=6,
     containing_service=None,
     input_type=_WAITFORSTATETRANSITIONRESULTREQUEST,
@@ -915,37 +915,37 @@ try:
         channel: A grpc.Channel.
       """
       self.broadcastStateTransition = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Platform/broadcastStateTransition',
+          '/org.xazab.platform.dapi.v0.Platform/broadcastStateTransition',
           request_serializer=BroadcastStateTransitionRequest.SerializeToString,
           response_deserializer=BroadcastStateTransitionResponse.FromString,
           )
       self.getIdentity = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Platform/getIdentity',
+          '/org.xazab.platform.dapi.v0.Platform/getIdentity',
           request_serializer=GetIdentityRequest.SerializeToString,
           response_deserializer=GetIdentityResponse.FromString,
           )
       self.getDataContract = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Platform/getDataContract',
+          '/org.xazab.platform.dapi.v0.Platform/getDataContract',
           request_serializer=GetDataContractRequest.SerializeToString,
           response_deserializer=GetDataContractResponse.FromString,
           )
       self.getDocuments = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Platform/getDocuments',
+          '/org.xazab.platform.dapi.v0.Platform/getDocuments',
           request_serializer=GetDocumentsRequest.SerializeToString,
           response_deserializer=GetDocumentsResponse.FromString,
           )
       self.getIdentitiesByPublicKeyHashes = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Platform/getIdentitiesByPublicKeyHashes',
+          '/org.xazab.platform.dapi.v0.Platform/getIdentitiesByPublicKeyHashes',
           request_serializer=GetIdentitiesByPublicKeyHashesRequest.SerializeToString,
           response_deserializer=GetIdentitiesByPublicKeyHashesResponse.FromString,
           )
       self.getIdentityIdsByPublicKeyHashes = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Platform/getIdentityIdsByPublicKeyHashes',
+          '/org.xazab.platform.dapi.v0.Platform/getIdentityIdsByPublicKeyHashes',
           request_serializer=GetIdentityIdsByPublicKeyHashesRequest.SerializeToString,
           response_deserializer=GetIdentityIdsByPublicKeyHashesResponse.FromString,
           )
       self.waitForStateTransitionResult = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Platform/waitForStateTransitionResult',
+          '/org.xazab.platform.dapi.v0.Platform/waitForStateTransitionResult',
           request_serializer=WaitForStateTransitionResultRequest.SerializeToString,
           response_deserializer=WaitForStateTransitionResultResponse.FromString,
           )
@@ -1044,7 +1044,7 @@ try:
         ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-        'org.dash.platform.dapi.v0.Platform', rpc_method_handlers)
+        'org.xazab.platform.dapi.v0.Platform', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -1138,31 +1138,31 @@ try:
     file not marked beta) for all further purposes. This function was
     generated only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0"""
     request_deserializers = {
-      ('org.dash.platform.dapi.v0.Platform', 'broadcastStateTransition'): BroadcastStateTransitionRequest.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getDataContract'): GetDataContractRequest.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getDocuments'): GetDocumentsRequest.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): GetIdentitiesByPublicKeyHashesRequest.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentity'): GetIdentityRequest.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): GetIdentityIdsByPublicKeyHashesRequest.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): WaitForStateTransitionResultRequest.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'broadcastStateTransition'): BroadcastStateTransitionRequest.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getDataContract'): GetDataContractRequest.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getDocuments'): GetDocumentsRequest.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): GetIdentitiesByPublicKeyHashesRequest.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentity'): GetIdentityRequest.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): GetIdentityIdsByPublicKeyHashesRequest.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): WaitForStateTransitionResultRequest.FromString,
     }
     response_serializers = {
-      ('org.dash.platform.dapi.v0.Platform', 'broadcastStateTransition'): BroadcastStateTransitionResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getDataContract'): GetDataContractResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getDocuments'): GetDocumentsResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): GetIdentitiesByPublicKeyHashesResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentity'): GetIdentityResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): GetIdentityIdsByPublicKeyHashesResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): WaitForStateTransitionResultResponse.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'broadcastStateTransition'): BroadcastStateTransitionResponse.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getDataContract'): GetDataContractResponse.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getDocuments'): GetDocumentsResponse.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): GetIdentitiesByPublicKeyHashesResponse.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentity'): GetIdentityResponse.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): GetIdentityIdsByPublicKeyHashesResponse.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): WaitForStateTransitionResultResponse.SerializeToString,
     }
     method_implementations = {
-      ('org.dash.platform.dapi.v0.Platform', 'broadcastStateTransition'): face_utilities.unary_unary_inline(servicer.broadcastStateTransition),
-      ('org.dash.platform.dapi.v0.Platform', 'getDataContract'): face_utilities.unary_unary_inline(servicer.getDataContract),
-      ('org.dash.platform.dapi.v0.Platform', 'getDocuments'): face_utilities.unary_unary_inline(servicer.getDocuments),
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): face_utilities.unary_unary_inline(servicer.getIdentitiesByPublicKeyHashes),
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentity'): face_utilities.unary_unary_inline(servicer.getIdentity),
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): face_utilities.unary_unary_inline(servicer.getIdentityIdsByPublicKeyHashes),
-      ('org.dash.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): face_utilities.unary_unary_inline(servicer.waitForStateTransitionResult),
+      ('org.xazab.platform.dapi.v0.Platform', 'broadcastStateTransition'): face_utilities.unary_unary_inline(servicer.broadcastStateTransition),
+      ('org.xazab.platform.dapi.v0.Platform', 'getDataContract'): face_utilities.unary_unary_inline(servicer.getDataContract),
+      ('org.xazab.platform.dapi.v0.Platform', 'getDocuments'): face_utilities.unary_unary_inline(servicer.getDocuments),
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): face_utilities.unary_unary_inline(servicer.getIdentitiesByPublicKeyHashes),
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentity'): face_utilities.unary_unary_inline(servicer.getIdentity),
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): face_utilities.unary_unary_inline(servicer.getIdentityIdsByPublicKeyHashes),
+      ('org.xazab.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): face_utilities.unary_unary_inline(servicer.waitForStateTransitionResult),
     }
     server_options = beta_implementations.server_options(request_deserializers=request_deserializers, response_serializers=response_serializers, thread_pool=pool, thread_pool_size=pool_size, default_timeout=default_timeout, maximum_timeout=maximum_timeout)
     return beta_implementations.server(method_implementations, options=server_options)
@@ -1175,22 +1175,22 @@ try:
     file not marked beta) for all further purposes. This function was
     generated only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0"""
     request_serializers = {
-      ('org.dash.platform.dapi.v0.Platform', 'broadcastStateTransition'): BroadcastStateTransitionRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getDataContract'): GetDataContractRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getDocuments'): GetDocumentsRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): GetIdentitiesByPublicKeyHashesRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentity'): GetIdentityRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): GetIdentityIdsByPublicKeyHashesRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): WaitForStateTransitionResultRequest.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'broadcastStateTransition'): BroadcastStateTransitionRequest.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getDataContract'): GetDataContractRequest.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getDocuments'): GetDocumentsRequest.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): GetIdentitiesByPublicKeyHashesRequest.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentity'): GetIdentityRequest.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): GetIdentityIdsByPublicKeyHashesRequest.SerializeToString,
+      ('org.xazab.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): WaitForStateTransitionResultRequest.SerializeToString,
     }
     response_deserializers = {
-      ('org.dash.platform.dapi.v0.Platform', 'broadcastStateTransition'): BroadcastStateTransitionResponse.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getDataContract'): GetDataContractResponse.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getDocuments'): GetDocumentsResponse.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): GetIdentitiesByPublicKeyHashesResponse.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentity'): GetIdentityResponse.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): GetIdentityIdsByPublicKeyHashesResponse.FromString,
-      ('org.dash.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): WaitForStateTransitionResultResponse.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'broadcastStateTransition'): BroadcastStateTransitionResponse.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getDataContract'): GetDataContractResponse.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getDocuments'): GetDocumentsResponse.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentitiesByPublicKeyHashes'): GetIdentitiesByPublicKeyHashesResponse.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentity'): GetIdentityResponse.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'getIdentityIdsByPublicKeyHashes'): GetIdentityIdsByPublicKeyHashesResponse.FromString,
+      ('org.xazab.platform.dapi.v0.Platform', 'waitForStateTransitionResult'): WaitForStateTransitionResultResponse.FromString,
     }
     cardinalities = {
       'broadcastStateTransition': cardinality.Cardinality.UNARY_UNARY,
@@ -1202,7 +1202,7 @@ try:
       'waitForStateTransitionResult': cardinality.Cardinality.UNARY_UNARY,
     }
     stub_options = beta_implementations.stub_options(host=host, metadata_transformer=metadata_transformer, request_serializers=request_serializers, response_deserializers=response_deserializers, thread_pool=pool, thread_pool_size=pool_size)
-    return beta_implementations.dynamic_stub(channel, 'org.dash.platform.dapi.v0.Platform', cardinalities, options=stub_options)
+    return beta_implementations.dynamic_stub(channel, 'org.xazab.platform.dapi.v0.Platform', cardinalities, options=stub_options)
 except ImportError:
   pass
 # @@protoc_insertion_point(module_scope)

@@ -1,7 +1,7 @@
 # DAPI GRPC
 
-[![Build Status](https://travis-ci.com/dashevo/dapi-grpc.svg?branch=master)](https://travis-ci.com/dashevo/dapi-grpc)
-[![NPM version](https://img.shields.io/npm/v/@dashevo/dapi-grpc.svg)](https://npmjs.org/package/@dashevo/dapi-grpc)
+[![Build Status](https://travis-ci.com/xazabevo/dapi-grpc.svg?branch=master)](https://travis-ci.com/xazabevo/dapi-grpc)
+[![NPM version](https://img.shields.io/npm/v/@xazabevo/dapi-grpc.svg)](https://npmjs.org/package/@xazabevo/dapi-grpc)
 
 > Decentralized API GRPC definition files and generated clients
 
@@ -15,7 +15,7 @@
 ## Install
 
 ```sh
-npm install @dashevo/dapi-grpc
+npm install @xazabevo/dapi-grpc
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ npm install @dashevo/dapi-grpc
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/dapi-grpc/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/xazabevo/dapi-grpc/issues/new) or submit PRs.
 
 ## License
 

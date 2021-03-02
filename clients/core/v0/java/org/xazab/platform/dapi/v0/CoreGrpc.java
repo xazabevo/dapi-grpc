@@ -1,4 +1,4 @@
-package org.dash.platform.dapi.v0;
+package org.xazab.platform.dapi.v0;
 
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
 import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
@@ -24,92 +24,92 @@ public final class CoreGrpc {
 
   private CoreGrpc() {}
 
-  public static final String SERVICE_NAME = "org.dash.platform.dapi.v0.Core";
+  public static final String SERVICE_NAME = "org.xazab.platform.dapi.v0.Core";
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.CoreOuterClass.GetStatusRequest,
-      org.dash.platform.dapi.v0.CoreOuterClass.GetStatusResponse> METHOD_GET_STATUS =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.CoreOuterClass.GetStatusRequest, org.dash.platform.dapi.v0.CoreOuterClass.GetStatusResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusRequest,
+      org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusResponse> METHOD_GET_STATUS =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusRequest, org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Core", "getStatus"))
+              "org.xazab.platform.dapi.v0.Core", "getStatus"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.GetStatusRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.GetStatusResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.CoreOuterClass.GetBlockRequest,
-      org.dash.platform.dapi.v0.CoreOuterClass.GetBlockResponse> METHOD_GET_BLOCK =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.CoreOuterClass.GetBlockRequest, org.dash.platform.dapi.v0.CoreOuterClass.GetBlockResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockRequest,
+      org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockResponse> METHOD_GET_BLOCK =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockRequest, org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Core", "getBlock"))
+              "org.xazab.platform.dapi.v0.Core", "getBlock"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.GetBlockRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.GetBlockResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest,
-      org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse> METHOD_BROADCAST_TRANSACTION =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest, org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest,
+      org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse> METHOD_BROADCAST_TRANSACTION =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest, org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Core", "broadcastTransaction"))
+              "org.xazab.platform.dapi.v0.Core", "broadcastTransaction"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionRequest,
-      org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionResponse> METHOD_GET_TRANSACTION =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionRequest, org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionRequest,
+      org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionResponse> METHOD_GET_TRANSACTION =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionRequest, org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Core", "getTransaction"))
+              "org.xazab.platform.dapi.v0.Core", "getTransaction"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest,
-      org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse> METHOD_GET_ESTIMATED_TRANSACTION_FEE =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest, org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest,
+      org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse> METHOD_GET_ESTIMATED_TRANSACTION_FEE =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest, org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Core", "getEstimatedTransactionFee"))
+              "org.xazab.platform.dapi.v0.Core", "getEstimatedTransactionFee"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest,
-      org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse> METHOD_SUBSCRIBE_TO_BLOCK_HEADERS_WITH_CHAIN_LOCKS =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest, org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest,
+      org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse> METHOD_SUBSCRIBE_TO_BLOCK_HEADERS_WITH_CHAIN_LOCKS =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest, org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Core", "subscribeToBlockHeadersWithChainLocks"))
+              "org.xazab.platform.dapi.v0.Core", "subscribeToBlockHeadersWithChainLocks"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest,
-      org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse> METHOD_SUBSCRIBE_TO_TRANSACTIONS_WITH_PROOFS =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest, org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest,
+      org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse> METHOD_SUBSCRIBE_TO_TRANSACTIONS_WITH_PROOFS =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest, org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Core", "subscribeToTransactionsWithProofs"))
+              "org.xazab.platform.dapi.v0.Core", "subscribeToTransactionsWithProofs"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse.getDefaultInstance()))
           .build();
 
   /**
@@ -141,50 +141,50 @@ public final class CoreGrpc {
 
     /**
      */
-    public void getStatus(org.dash.platform.dapi.v0.CoreOuterClass.GetStatusRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetStatusResponse> responseObserver) {
+    public void getStatus(org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_STATUS, responseObserver);
     }
 
     /**
      */
-    public void getBlock(org.dash.platform.dapi.v0.CoreOuterClass.GetBlockRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetBlockResponse> responseObserver) {
+    public void getBlock(org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_BLOCK, responseObserver);
     }
 
     /**
      */
-    public void broadcastTransaction(org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse> responseObserver) {
+    public void broadcastTransaction(org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_BROADCAST_TRANSACTION, responseObserver);
     }
 
     /**
      */
-    public void getTransaction(org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionResponse> responseObserver) {
+    public void getTransaction(org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_TRANSACTION, responseObserver);
     }
 
     /**
      */
-    public void getEstimatedTransactionFee(org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse> responseObserver) {
+    public void getEstimatedTransactionFee(org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_ESTIMATED_TRANSACTION_FEE, responseObserver);
     }
 
     /**
      */
-    public void subscribeToBlockHeadersWithChainLocks(org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse> responseObserver) {
+    public void subscribeToBlockHeadersWithChainLocks(org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_SUBSCRIBE_TO_BLOCK_HEADERS_WITH_CHAIN_LOCKS, responseObserver);
     }
 
     /**
      */
-    public void subscribeToTransactionsWithProofs(org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse> responseObserver) {
+    public void subscribeToTransactionsWithProofs(org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_SUBSCRIBE_TO_TRANSACTIONS_WITH_PROOFS, responseObserver);
     }
 
@@ -194,50 +194,50 @@ public final class CoreGrpc {
             METHOD_GET_STATUS,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.CoreOuterClass.GetStatusRequest,
-                org.dash.platform.dapi.v0.CoreOuterClass.GetStatusResponse>(
+                org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusRequest,
+                org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusResponse>(
                   this, METHODID_GET_STATUS)))
           .addMethod(
             METHOD_GET_BLOCK,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.CoreOuterClass.GetBlockRequest,
-                org.dash.platform.dapi.v0.CoreOuterClass.GetBlockResponse>(
+                org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockRequest,
+                org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockResponse>(
                   this, METHODID_GET_BLOCK)))
           .addMethod(
             METHOD_BROADCAST_TRANSACTION,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest,
-                org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse>(
+                org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest,
+                org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse>(
                   this, METHODID_BROADCAST_TRANSACTION)))
           .addMethod(
             METHOD_GET_TRANSACTION,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionRequest,
-                org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionResponse>(
+                org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionRequest,
+                org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionResponse>(
                   this, METHODID_GET_TRANSACTION)))
           .addMethod(
             METHOD_GET_ESTIMATED_TRANSACTION_FEE,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest,
-                org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse>(
+                org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest,
+                org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse>(
                   this, METHODID_GET_ESTIMATED_TRANSACTION_FEE)))
           .addMethod(
             METHOD_SUBSCRIBE_TO_BLOCK_HEADERS_WITH_CHAIN_LOCKS,
             asyncServerStreamingCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest,
-                org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse>(
+                org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest,
+                org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse>(
                   this, METHODID_SUBSCRIBE_TO_BLOCK_HEADERS_WITH_CHAIN_LOCKS)))
           .addMethod(
             METHOD_SUBSCRIBE_TO_TRANSACTIONS_WITH_PROOFS,
             asyncServerStreamingCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest,
-                org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse>(
+                org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest,
+                org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse>(
                   this, METHODID_SUBSCRIBE_TO_TRANSACTIONS_WITH_PROOFS)))
           .build();
     }
@@ -263,56 +263,56 @@ public final class CoreGrpc {
 
     /**
      */
-    public void getStatus(org.dash.platform.dapi.v0.CoreOuterClass.GetStatusRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetStatusResponse> responseObserver) {
+    public void getStatus(org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_STATUS, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getBlock(org.dash.platform.dapi.v0.CoreOuterClass.GetBlockRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetBlockResponse> responseObserver) {
+    public void getBlock(org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_BLOCK, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void broadcastTransaction(org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse> responseObserver) {
+    public void broadcastTransaction(org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_BROADCAST_TRANSACTION, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getTransaction(org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionResponse> responseObserver) {
+    public void getTransaction(org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_TRANSACTION, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getEstimatedTransactionFee(org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse> responseObserver) {
+    public void getEstimatedTransactionFee(org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_ESTIMATED_TRANSACTION_FEE, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void subscribeToBlockHeadersWithChainLocks(org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse> responseObserver) {
+    public void subscribeToBlockHeadersWithChainLocks(org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse> responseObserver) {
       asyncServerStreamingCall(
           getChannel().newCall(METHOD_SUBSCRIBE_TO_BLOCK_HEADERS_WITH_CHAIN_LOCKS, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void subscribeToTransactionsWithProofs(org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse> responseObserver) {
+    public void subscribeToTransactionsWithProofs(org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse> responseObserver) {
       asyncServerStreamingCall(
           getChannel().newCall(METHOD_SUBSCRIBE_TO_TRANSACTIONS_WITH_PROOFS, getCallOptions()), request, responseObserver);
     }
@@ -338,51 +338,51 @@ public final class CoreGrpc {
 
     /**
      */
-    public org.dash.platform.dapi.v0.CoreOuterClass.GetStatusResponse getStatus(org.dash.platform.dapi.v0.CoreOuterClass.GetStatusRequest request) {
+    public org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusResponse getStatus(org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_STATUS, getCallOptions(), request);
     }
 
     /**
      */
-    public org.dash.platform.dapi.v0.CoreOuterClass.GetBlockResponse getBlock(org.dash.platform.dapi.v0.CoreOuterClass.GetBlockRequest request) {
+    public org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockResponse getBlock(org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_BLOCK, getCallOptions(), request);
     }
 
     /**
      */
-    public org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse broadcastTransaction(org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest request) {
+    public org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse broadcastTransaction(org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_BROADCAST_TRANSACTION, getCallOptions(), request);
     }
 
     /**
      */
-    public org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionResponse getTransaction(org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionRequest request) {
+    public org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionResponse getTransaction(org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_TRANSACTION, getCallOptions(), request);
     }
 
     /**
      */
-    public org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse getEstimatedTransactionFee(org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest request) {
+    public org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse getEstimatedTransactionFee(org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_ESTIMATED_TRANSACTION_FEE, getCallOptions(), request);
     }
 
     /**
      */
-    public java.util.Iterator<org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse> subscribeToBlockHeadersWithChainLocks(
-        org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest request) {
+    public java.util.Iterator<org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse> subscribeToBlockHeadersWithChainLocks(
+        org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest request) {
       return blockingServerStreamingCall(
           getChannel(), METHOD_SUBSCRIBE_TO_BLOCK_HEADERS_WITH_CHAIN_LOCKS, getCallOptions(), request);
     }
 
     /**
      */
-    public java.util.Iterator<org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse> subscribeToTransactionsWithProofs(
-        org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest request) {
+    public java.util.Iterator<org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse> subscribeToTransactionsWithProofs(
+        org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest request) {
       return blockingServerStreamingCall(
           getChannel(), METHOD_SUBSCRIBE_TO_TRANSACTIONS_WITH_PROOFS, getCallOptions(), request);
     }
@@ -408,40 +408,40 @@ public final class CoreGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.CoreOuterClass.GetStatusResponse> getStatus(
-        org.dash.platform.dapi.v0.CoreOuterClass.GetStatusRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusResponse> getStatus(
+        org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_STATUS, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.CoreOuterClass.GetBlockResponse> getBlock(
-        org.dash.platform.dapi.v0.CoreOuterClass.GetBlockRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockResponse> getBlock(
+        org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_BLOCK, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse> broadcastTransaction(
-        org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse> broadcastTransaction(
+        org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_BROADCAST_TRANSACTION, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionResponse> getTransaction(
-        org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionResponse> getTransaction(
+        org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_TRANSACTION, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse> getEstimatedTransactionFee(
-        org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse> getEstimatedTransactionFee(
+        org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_ESTIMATED_TRANSACTION_FEE, getCallOptions()), request);
     }
@@ -473,32 +473,32 @@ public final class CoreGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_STATUS:
-          serviceImpl.getStatus((org.dash.platform.dapi.v0.CoreOuterClass.GetStatusRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetStatusResponse>) responseObserver);
+          serviceImpl.getStatus((org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetStatusResponse>) responseObserver);
           break;
         case METHODID_GET_BLOCK:
-          serviceImpl.getBlock((org.dash.platform.dapi.v0.CoreOuterClass.GetBlockRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetBlockResponse>) responseObserver);
+          serviceImpl.getBlock((org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetBlockResponse>) responseObserver);
           break;
         case METHODID_BROADCAST_TRANSACTION:
-          serviceImpl.broadcastTransaction((org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse>) responseObserver);
+          serviceImpl.broadcastTransaction((org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.BroadcastTransactionResponse>) responseObserver);
           break;
         case METHODID_GET_TRANSACTION:
-          serviceImpl.getTransaction((org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetTransactionResponse>) responseObserver);
+          serviceImpl.getTransaction((org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetTransactionResponse>) responseObserver);
           break;
         case METHODID_GET_ESTIMATED_TRANSACTION_FEE:
-          serviceImpl.getEstimatedTransactionFee((org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse>) responseObserver);
+          serviceImpl.getEstimatedTransactionFee((org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.GetEstimatedTransactionFeeResponse>) responseObserver);
           break;
         case METHODID_SUBSCRIBE_TO_BLOCK_HEADERS_WITH_CHAIN_LOCKS:
-          serviceImpl.subscribeToBlockHeadersWithChainLocks((org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse>) responseObserver);
+          serviceImpl.subscribeToBlockHeadersWithChainLocks((org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.BlockHeadersWithChainLocksResponse>) responseObserver);
           break;
         case METHODID_SUBSCRIBE_TO_TRANSACTIONS_WITH_PROOFS:
-          serviceImpl.subscribeToTransactionsWithProofs((org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse>) responseObserver);
+          serviceImpl.subscribeToTransactionsWithProofs((org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.CoreOuterClass.TransactionsWithProofsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -519,7 +519,7 @@ public final class CoreGrpc {
   private static final class CoreDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return org.dash.platform.dapi.v0.CoreOuterClass.getDescriptor();
+      return org.xazab.platform.dapi.v0.CoreOuterClass.getDescriptor();
     }
   }
 

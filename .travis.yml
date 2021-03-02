@@ -31,7 +31,7 @@ script:
   - npm run check-package
 
 before_deploy:
-  # Add token for @dashevo private npm registry
+  # Add token for @xazabevo private npm registry
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
 
 deploy:
@@ -39,5 +39,5 @@ deploy:
   script: bash scripts/travis-deploy.sh
   on:
     tags: true
-    repo: dashevo/dapi-grpc
+    repo: xazabevo/dapi-grpc
   skip_cleanup: true
